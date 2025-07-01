@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>จะตอบ Yes หรือ Yes ดี? 😁</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <h1>รักปอมุ้ยยยย 💕</h1>
+    <button class="btn" id="yesBtn">Yes</button>
+    <button class="btn" id="noBtn">No</button>
+
+    <script>
+        const noBtn = document.getElementById('noBtn');
+        const yesBtn = document.getElementById('yesBtn');
+
+        
+        function moveNoButton() {
+            const x = Math.floor(Math.random() * window.innerWidth * 0.8);
+            const y = Math.floor(Math.random() * window.innerHeight * 0.7);
+            noBtn.style.position = 'absolute';
+            noBtn.style.left = `${x}px`;
+            noBtn.style.top = `${y}px`;
+        }
+
+        noBtn.addEventListener('mouseover', moveNoButton); // บน Desktop
+        noBtn.addEventListener('touchstart', moveNoButton); // บน Mobile
+
+        yesBtn.addEventListener('click', () => {
+            ("เยสสส!! ดีใจที่สุดเลย 💖");
+        });
+    </script>
+
+</body>
+
+</html>

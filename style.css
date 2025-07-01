@@ -1,0 +1,45 @@
+body {
+  background: linear-gradient(to top right, #ffe6f0, #fdfbfb);
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #e91e63;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  justify-content: center;
+}
+
+.btn {
+  padding: 15px 35px;
+  margin: 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#yesBtn {
+  background-color: #ff69b4;
+  color: white;
+}
+
+#yesBtn:hover {
+  background-color: #f06292;
+}
+
+#noBtn {
+  background-color: #f8bbd0;
+  color: #6d0033;
+  position: absolute;
+}
+
+#noBtn:hover {
+  background-color: #f48fb1;
+}
